@@ -1,0 +1,84 @@
+/* CSS for About Me Section */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.main-cont {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-head p {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.profile-img img:hover {
+    transform: scale(1.1);
+}
+
+.about-info {
+    max-width: 450px;
+}
+
+.about-me p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333;
+}
+
+.about-tech-stack p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-tech-stack ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.about-tech-stack li {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.about-tech-stack li:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img img {
+        width: 200px;
+    }
+}
